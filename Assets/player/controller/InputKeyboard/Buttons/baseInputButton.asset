@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac8568875cf34334bb8d51435134c657, type: 3}
+  m_Name: baseInputButton
+  m_EditorClassIdentifier: 
+  Movements:
+  - {fileID: 11400000, guid: c373299261bf5994b99c6c573d5dbfc3, type: 2}
+  - {fileID: 11400000, guid: 12f8ba69cb8ca9e43834f81462ec9698, type: 2}
+  - {fileID: 11400000, guid: 0bc83c20e69340648a24d1f0700052e0, type: 2}
+  - {fileID: 11400000, guid: b11cb710fe7ac2447acee28365b98b15, type: 2}
+  - {fileID: 11400000, guid: 9c8b024d0baa1ba4aaa3b0974e7ad445, type: 2}
+  Combat:
+  - {fileID: 11400000, guid: a7dcd687f9777ef46944c80b5f1af6cf, type: 2}
+  - {fileID: 11400000, guid: 62d1fd740cc51ec4ab9be6e2e313fe53, type: 2}
+  UserInterfaces:
+  - {fileID: 11400000, guid: 0e309e03425508e4b8602a52907bab67, type: 2}
+  - {fileID: 11400000, guid: ea5eb99cb93c8ed47a048d765562714e, type: 2}
+  - {fileID: 11400000, guid: 482a45b5d73359c438beecfc1f0f4e72, type: 2}

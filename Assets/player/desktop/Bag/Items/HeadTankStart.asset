@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e7362d939b1034459783507f7edc17f, type: 3}
+  m_Name: HeadTankStart
+  m_EditorClassIdentifier: 
+  id: 4
+  Name: "\u0422\u0435\u0440\u043C\u0438\u043D\u0430\u0442\u043E\u0440\u0438\u044F"
+  quality: 0
+  type: 1
+  Icon: {fileID: 21300000, guid: ed31ec4bf3dce0c4bbb4972da96a8709, type: 3}
+  Damage: 0
+  Stats_1: 20
+  Stats_2: 0
+  Stats_3: 0
+  Stats_4: 0
+  Stats_5: 0
+  needLvl: 1
+  Strength: 60
+  Price: 180
+  Description: "\u041C\u044B \u0443\u043A\u0440\u0430\u043B\u0438 \u0435\u0451 \u0441\u043E
+    \u0441\u044A\u0451\u043C\u043E\u043A \u0444\u043E\u0440\u0441\u0430\u0436\u0430"
