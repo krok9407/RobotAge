@@ -6,12 +6,14 @@ using UnityEngine.UI;
 public class SearchPlayers : MonoBehaviour
 {
     [SerializeField] private GameObject panelListPlayers;
-     [SerializeField]private InputField inputSearch;
+    [SerializeField]private InputField inputSearch;
     private List<GameObject> listAllPlayers = new List<GameObject>();
-     private void Awake() {
+
+    private void Start() {
          inputSearch = gameObject.GetComponent<InputField>();
         getAllUsers();
     }
+
     void getAllUsers(){
         for(int i=0; i<panelListPlayers.transform.childCount;i++){
             listAllPlayers.Add(panelListPlayers.transform.GetChild(i).gameObject);
