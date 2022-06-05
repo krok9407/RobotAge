@@ -1,9 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class createPlayerIcon : MonoBehaviour
 {
-    public PlayerInfo[] players;
+    ListPlayersInfo playersList;
+    List<PlayerInfo> players;
+
     public Transform spawnRobotModel;
 
     [SerializeField] private GameObject PlayerBox;
@@ -11,13 +15,18 @@ public class createPlayerIcon : MonoBehaviour
     [SerializeField] private Sprite IconTank;
     [SerializeField] private Sprite IconRough;
     [SerializeField] private GameObject InfoLabel;
+
+    [SerializeField] private List<GameObject> buttons;
+    [SerializeField] private List<GameObject> Robots;
                       
     
     void Awake()
     {
-         GameObject ButtonInGame = InfoLabel.GetComponentInChildren<ButtonInGame>().gameObject;
+        playersList = GetComponent<ListPlayersInfo>();
+        players = playersList.players;
+        GameObject ButtonInGame = InfoLabel.GetComponentInChildren<ButtonInGame>().gameObject;
         
-        if(players.Length>0){
+        if(players.Count>0){
              ButtonInGame.SetActive(true);
         Text LabelNickName = InfoLabel.GetComponentInChildren<LabelNickName>().GetComponent<Text>();
         Text LabelLvlCount = InfoLabel.GetComponentInChildren<LabelLvlCount>().GetComponent<Text>();
@@ -29,6 +38,7 @@ public class createPlayerIcon : MonoBehaviour
              
         foreach(PlayerInfo player in players){
             var newVox = Instantiate(PlayerBox, transform);
+            buttons.Add(newVox);
             var img = newVox.transform.GetChild(0).GetComponent<Image>();
              var text = newVox.transform.GetChild(1).GetComponent<Text>();
              var button =  newVox.GetComponent<Button>();
@@ -40,6 +50,7 @@ public class createPlayerIcon : MonoBehaviour
                 img.sprite = IconRough;
             }
             var modelRobot = Instantiate(player.modelRobot,spawnRobotModel.position,spawnRobotModel.rotation);
+            Robots.Add(modelRobot);
             modelRobot.transform.SetParent(spawnRobotModel);
             modelRobot.SetActive(false);
             text.text = player.nickName; 
@@ -67,9 +78,17 @@ public class createPlayerIcon : MonoBehaviour
                 LabelNameGild.text =  player.nameGild;
                  modelRobot.SetActive(true);
              }
+             foreach(var btn in buttons){
+                btn.GetComponent<Button>().onClick.AddListener(()=> {
+                    foreach(var _btn in buttons){
+                        _btn.GetComponent<Selected>().isSelect = false;
+                    }
+                    btn.GetComponent<Selected>().isSelect = true;
+                });
+             }
         }
         
-    }else{
+        }else{
         ButtonInGame.GetComponent<Text>().text = "Create";
         
          ButtonInGame.GetComponent<Button>().onClick.AddListener(()=> {
@@ -77,8 +96,22 @@ public class createPlayerIcon : MonoBehaviour
          });
         GameObject ButtonDelete = InfoLabel.GetComponentInChildren<ButtonDelete>().gameObject;
         ButtonDelete.SetActive(false);
+        }
+
+
     }
-
-
+    public void RemovePlayer(){
+        for(int i=0; i<buttons.Count; i++)
+        {
+            if(buttons[i].GetComponent<Selected>().isSelect)
+            {
+                playersList.DeletePlayers(players[i]);
+                Destroy(Robots[i].gameObject);
+                Robots.Remove(Robots[i]);
+                
+                Destroy(buttons[i].gameObject);
+                buttons.Remove(buttons[i]);
+            }   
+        }
     }
 }

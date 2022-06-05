@@ -168,6 +168,7 @@ GameObject:
   - component: {fileID: 5309780703799033544}
   - component: {fileID: 5309780703799033545}
   - component: {fileID: 422015798702178334}
+  - component: {fileID: 7971836312699785347}
   m_Layer: 5
   m_Name: PlayerBox
   m_TagString: Untagged
@@ -279,3 +280,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7971836312699785347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5309780703799033547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddabb92c8a31f844983324bd9e051f10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSelect: 0
