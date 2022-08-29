@@ -28,6 +28,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -35,7 +36,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 676.4381, y: 13.653902}
-  m_SizeDelta: {x: 21.50614, y: 21.50614}
+  m_SizeDelta: {x: 21.509247, y: 21.509247}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7661342126225860329
 CanvasRenderer:
