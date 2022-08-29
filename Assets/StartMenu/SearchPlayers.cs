@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class SearchPlayers : MonoBehaviour
 {
-    [SerializeField]private InputField inputSearch;
+    private InputField inputSearch;
     private List<GameObject> listAllPlayers;
     public createPlayerIcon _createPlayerIcon;
 
     private void Start() {
-         inputSearch = gameObject.GetComponent<InputField>();
+        inputSearch = gameObject.GetComponent<InputField>();
         listAllPlayers = _createPlayerIcon.buttons;
     }
     public void filterPlayers(){

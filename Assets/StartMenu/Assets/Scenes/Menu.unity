@@ -714,6 +714,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1722268117}
+        m_TargetAssemblyTypeName: SearchInfo, Assembly-CSharp
+        m_MethodName: GetElements
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &41901033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2351,17 +2363,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1548778273}
-        m_TargetAssemblyTypeName: DrawDataBaseElement, Assembly-CSharp
-        m_MethodName: createEnemysElement
-        m_Mode: 1
+      - m_Target: {fileID: 1656337868}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1656337868}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -2374,6 +2386,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1722268117}
+        m_TargetAssemblyTypeName: SearchInfo, Assembly-CSharp
+        m_MethodName: GetElements
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &180525864
 MonoBehaviour:
@@ -10548,6 +10572,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1722268117}
+        m_TargetAssemblyTypeName: SearchInfo, Assembly-CSharp
+        m_MethodName: GetElements
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &928464657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16624,6 +16660,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1548778273}
+        m_TargetAssemblyTypeName: DrawDataBaseElement, Assembly-CSharp
+        m_MethodName: closeDataBase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1722268117}
+        m_TargetAssemblyTypeName: SearchInfo, Assembly-CSharp
+        m_MethodName: GetElements
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1560524697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18128,7 +18188,7 @@ GameObject:
   - component: {fileID: 1722268116}
   - component: {fileID: 1722268115}
   - component: {fileID: 1722268114}
-  - component: {fileID: 1722268113}
+  - component: {fileID: 1722268117}
   m_Layer: 5
   m_Name: InputSearching
   m_TagString: Untagged
@@ -18158,20 +18218,6 @@ RectTransform:
   m_AnchoredPosition: {x: 285, y: -56.400024}
   m_SizeDelta: {x: 570, y: 112.8}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1722268113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722268111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e7adee1655e36d46bd88d44785a8826, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputSearch: {fileID: 0}
-  _createPlayerIcon: {fileID: 0}
 --- !u!114 &1722268114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18232,9 +18278,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1722268113}
-        m_TargetAssemblyTypeName: SearchPlayers, Assembly-CSharp
-        m_MethodName: filterPlayers
+      - m_Target: {fileID: 1722268117}
+        m_TargetAssemblyTypeName: SearchInfo, Assembly-CSharp
+        m_MethodName: FilterElements
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18290,6 +18336,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1722268111}
   m_CullTransparentMesh: 1
+--- !u!114 &1722268117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722268111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44bac8b1d8084354ca13d31f47906b9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  content: {fileID: 1548778271}
+  elements: []
 --- !u!1 &1722573404
 GameObject:
   m_ObjectHideFlags: 0
@@ -19303,6 +19363,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1722268117}
+        m_TargetAssemblyTypeName: SearchInfo, Assembly-CSharp
+        m_MethodName: GetElements
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -21668,7 +21740,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e7adee1655e36d46bd88d44785a8826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputSearch: {fileID: 2046503273}
   _createPlayerIcon: {fileID: 1001552103}
 --- !u!114 &2046503277
 MonoBehaviour:

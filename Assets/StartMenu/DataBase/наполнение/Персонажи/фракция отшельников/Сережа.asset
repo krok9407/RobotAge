@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 0
   Name: "\u0421\u0435\u0440\u0435\u0436\u0430"
   belonging: 0
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: a75af699d16c2dd499b7cb4eb0e9c433, type: 3}
   description: 
